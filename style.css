@@ -76,7 +76,7 @@ body {
 /* Intro Section */
 
 .bio {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
     color: #1a1a1a;
     text-align: left;
@@ -87,13 +87,13 @@ body {
 }
 
 .location {
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
     margin-bottom: 8px !important;
 }
 
 .education {
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
     margin-bottom: 32px !important;
     line-height: 1.6;
