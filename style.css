@@ -178,20 +178,36 @@ footer {
         flex-direction: column;
         gap: 20px;
         padding: 0 20px;
+        margin-left: 0;  /* 추가: 모바일에서 왼쪽 마진 제거 */
+        align-items: flex-start;  /* 추가: 왼쪽 정렬 */
     }
     
     .nav-menu {
-        gap: 20px;
+        gap: 15px;  /* 20px → 15px */
+        flex-direction: column;  /* 추가: 세로 나열 */
     }
     
     .container {
         margin: 0;
-        margin-left: 20px;
-        padding: 100px 20px 60px 0;
+        margin-left: 0;  /* 20px → 0 */
+        padding: 140px 20px 60px 20px;  /* 위쪽 패딩 증가, 양쪽 패딩 동일하게 */
+        max-width: 100%;  /* 추가 */
     }
     
     .intro h1 {
         font-size: 24px;
+    }
+    
+    .bio {
+        font-size: 14px;
+    }
+    
+    .logo {
+        font-size: 20px;  /* 추가: 모바일에서 로고 크기 */
+    }
+    
+    .nav-menu a {
+        font-size: 14px;  /* 15px → 14px */
     }
     
     footer {
