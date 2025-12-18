@@ -7,10 +7,10 @@
 
 body {
     font-family: 'Geist', 'Asta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     color: #1a1a1a;
-    background-color: #fffffc;
+    background-color: #fffff8;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 248, 0.95);  /* 변경 */
+    background-color: rgba(255, 255, 248, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: none;
     z-index: 1000;
@@ -73,20 +73,20 @@ body {
 
 /* Intro Section */
 .intro h1 {
-    font-family: 'Roboto Mono', monospace; 
-    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
     font-weight: 500;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     margin-bottom: 40px;
     line-height: 1.1;
     text-align: left;
 }
 
 .bio {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
-    color: #333;
-    text-aling: left;
+    color: #1a1a1a;
+    text-align: left;
 }
 
 .bio p {
@@ -94,13 +94,13 @@ body {
 }
 
 .location {
-    font-size: 12px;
+    font-size: 13px;
     color: #666;
     margin-bottom: 8px !important;
 }
 
 .education {
-    font-size: 12px;
+    font-size: 13px;
     color: #666;
     margin-bottom: 32px !important;
     line-height: 1.6;
@@ -122,13 +122,29 @@ body {
     opacity: 0.7;
 }
 
+/* Custom Text Colors */
+.highlight-teal {
+    color: rgba(10, 161, 166, 0.85) !important;
+    font-weight: 400;
+}
+
+.highlight-purple {
+    color: rgba(152, 69, 161, 0.85) !important;
+    font-weight: 400;
+}
+
+.highlight-brown {
+    color: rgba(92, 59, 1, 0.85) !important;
+    font-weight: 400;
+}
+
 /* Sections */
 section {
     margin-bottom: 80px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: -0.02em;
     margin-bottom: 24px;
@@ -145,7 +161,7 @@ ul {
     padding: 12px 0;
     border-bottom: 1px solid #f0f0f0;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .interests ul li:last-child {
@@ -159,8 +175,9 @@ footer {
     padding: 40px 40px 60px;
     text-align: center;
     color: #999;
-    font-size: 14px;
+    font-size: 13px;
     border-top: none;
+    display: none;
 }
 
 /* Responsive Design */
@@ -180,13 +197,14 @@ footer {
     }
     
     .intro h1 {
-        font-size: 36px;
+        font-size: 24px;
     }
     
     footer {
         padding: 40px 20px;
     }
 }
+
 /* Typography - Special Fonts */
 code, pre, .mono {
     font-family: 'Roboto Mono', monospace;
@@ -195,7 +213,7 @@ code, pre, .mono {
 
 blockquote {
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    font-size: 14px;
     padding-left: 20px;
     border-left: 3px solid #e5e5e5;
     color: #666;
@@ -205,21 +223,6 @@ blockquote {
 
 .note, .caption {
     font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
+    font-size: 12px;
     color: #999;
-}
-
-/* Custom Text Colors */
-.highlight-teal {
-    color: rgba(10, 161, 166, 0.85);
-    font-weight: 400;
-}
-
-.highlight-purple {
-    color: rgba(152, 69, 161, 0.85);
-    font-weight: 400;
-}
-
-.highlight-brown {
-    color: rgba(92, 59, 1, 0.85);
 }
