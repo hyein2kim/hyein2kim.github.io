@@ -208,3 +208,18 @@ blockquote {
     font-size: 13px;
     color: #999;
 }
+
+/* Custom Text Colors */
+.highlight-teal {
+    color: rgba(10, 161, 166, 0.85);
+    font-weight: 400;
+}
+
+.highlight-purple {
+    color: rgba(152, 69, 161, 0.85);
+    font-weight: 400;
+}
+
+.highlight-brown {
+    color: rgba(92, 59, 1, 0.85);
+}
