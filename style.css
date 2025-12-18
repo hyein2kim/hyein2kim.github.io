@@ -278,3 +278,74 @@ blockquote {
     font-size: 12px;
     color: #999;
 }
+
+/* Publications Page Styles */
+.pub-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.pub-item {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-family: 'Geist', 'Asta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.pub-meta {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.pub-link {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+.pub-link a {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px solid #0066cc;
+    transition: opacity 0.3s ease;
+}
+
+.pub-link a:hover {
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .pub-title {
+        font-size: 15px;
+    }
+    
+    .pub-meta, .pub-link {
+        font-size: 12px;
+    }
+}
