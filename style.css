@@ -39,7 +39,7 @@ body {
 
 .logo {
     font-family: 'PT Serif', serif; 
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: #1a1a1a;
     text-decoration: none;
@@ -284,11 +284,11 @@ blockquote {
     margin-bottom: 60px;
 }
 
-.section-title {
-    font-family: 'PT Serif', serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: -0.02em;
+.pub-section .section-title {
+    font-family: 'PT Serif', serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.02em !important;
     margin-bottom: 30px;
     color: #1a1a1a;
 }
@@ -301,51 +301,54 @@ blockquote {
 
 .pub-item:last-child {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
-.pub-title {
-    font-family: 'Geist', 'Asta Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+.pub-item .pub-title {
+    font-family: 'Geist', 'Asta Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
     color: #1a1a1a;
     margin-bottom: 8px;
     line-height: 1.4;
 }
 
-.pub-meta {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    color: #666;
+.pub-item .pub-meta {
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 13px !important;
+    color: #4a4a4a;
     margin-bottom: 6px;
 }
 
-.pub-link {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
+.pub-item .pub-link {
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 13px !important;
+    margin: 0;
 }
 
-.pub-link a {
-    color: #0066cc;
-    text-decoration: none;
-    border-bottom: 1px solid #0066cc;
+.pub-item .pub-link a {
+    color: #1a1a1a !important;  
+    text-decoration: underline;
+    border-bottom: none;
     transition: opacity 0.3s ease;
 }
 
-.pub-link a:hover {
-    opacity: 0.7;
+.pub-item .pub-link a:hover {
+    opacity: 0.6;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 24px;
+    .pub-section .section-title {
+        font-size: 24px !important;
     }
     
-    .pub-title {
-        font-size: 15px;
+    .pub-item .pub-title {
+        font-size: 15px !important;
     }
     
-    .pub-meta, .pub-link {
-        font-size: 12px;
+    .pub-item .pub-meta,
+    .pub-item .pub-link {
+        font-size: 12px !important;
     }
 }
