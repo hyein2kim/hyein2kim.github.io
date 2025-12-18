@@ -73,15 +73,6 @@ body {
 }
 
 /* Intro Section */
-.intro h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    margin-bottom: 40px;
-    line-height: 1.1;
-    text-align: left;
-}
 
 .bio {
     font-size: 14px;
