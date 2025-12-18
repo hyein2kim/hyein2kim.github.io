@@ -28,9 +28,10 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+    max-width: none;
+    margin: 0;
+    margin-left: 40px;
+    padding: 0 40px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,13 +87,13 @@ body {
 }
 
 .location {
-    font-size: 13px;
+    font-size: 17px;
     color: #666;
     margin-bottom: 8px !important;
 }
 
 .education {
-    font-size: 13px;
+    font-size: 17px;
     color: #666;
     margin-bottom: 32px !important;
     line-height: 1.6;
@@ -150,7 +151,7 @@ ul {
 }
 
 .interests ul li {
-    padding: 12px 0;
+    padding: 17px 0;
     border-bottom: 1px solid #f0f0f0;
     color: #333;
     font-size: 14px;
