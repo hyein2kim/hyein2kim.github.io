@@ -174,24 +174,29 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navigation {
+        padding: 15px 0;  
+    }
+    
     .nav-container {
         flex-direction: column;
-        gap: 20px;
-        padding: 0 20px;
-        margin-left: 0;  /* 추가: 모바일에서 왼쪽 마진 제거 */
-        align-items: flex-start;  /* 추가: 왼쪽 정렬 */
+        gap: 15px;  
+        padding: 0;  
+        margin-left: 20px;  
+        align-items: flex-start;
     }
     
     .nav-menu {
-        gap: 15px;  /* 20px → 15px */
-        flex-direction: column;  /* 추가: 세로 나열 */
+        gap: 10px;  /* 15px → 10px */
+        flex-direction: column;
+        padding-left: 0;  /* 추가 */
     }
     
     .container {
         margin: 0;
-        margin-left: 0;  /* 20px → 0 */
-        padding: 140px 20px 60px 20px;  /* 위쪽 패딩 증가, 양쪽 패딩 동일하게 */
-        max-width: 100%;  /* 추가 */
+        margin-left: 20px;  
+        padding: 160px 20px 60px 0;  
+        max-width: calc(100% - 40px);  
     }
     
     .intro h1 {
@@ -202,16 +207,28 @@ footer {
         font-size: 14px;
     }
     
+    .location {
+        font-size: 11px;  
+    }
+    
+    .education {
+        font-size: 11px;  
+        line-height: 1.8; 
+        white-space: normal;  
+        word-break: keep-all;  
+    }
+    
     .logo {
-        font-size: 20px;  /* 추가: 모바일에서 로고 크기 */
+        font-size: 18px;
     }
     
     .nav-menu a {
-        font-size: 14px;  /* 15px → 14px */
+        font-size: 14px;
     }
     
     footer {
         padding: 40px 20px;
+        margin-left: 20px; 
     }
 }
 
