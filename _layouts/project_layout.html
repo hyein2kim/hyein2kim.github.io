@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Asta+Sans:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navigation">
+    <div class="nav-container">
+      <a href="/" class="logo">{{ site.title }}</a>
+      <ul class="nav-menu">
+        <li><a href="/">About</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/projects.html" class="active">Projects</a></li>
+        <li><a href="/abcd.html">abcd</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-main">
+    <section class="project-page">
+      <h1 class="project-title">{{ page.title }}</h1>
+      <p class="project-date">{{ page.date | date: "%Y-%m-%d" }}</p>
+
+      {% if page.tags and page.tags.size > 0 %}
+      <div class="project-topic-list">
+        {% for tag in page.tags %}
+        <span class="abcd-tag">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="project-content">
+        {{ content }}
+      </div>
+    </section>
+  </main>
+</body>
+</html>

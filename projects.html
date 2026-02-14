@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -23,10 +25,19 @@
         </div>
     </nav>
 
-    <main class="container">
-        <section>
-            <h1>Projects</h1>
-            <p>Coming soon...</p>
+    <main class="projects-main">
+        {% assign project_items = site.projects | sort: "date" | reverse %}
+        <section class="projects-grid">
+            {% for project in project_items %}
+            <article class="project-tile {% if project.cover %}has-cover{% endif %}" {% if project.cover %}style="background-image: url('{{ project.cover | relative_url }}');"{% endif %}>
+                <a href="{{ project.url | relative_url }}" class="project-tile-link" aria-label="{{ project.title }}">
+                    <span class="project-tile-title">{{ project.title }}</span>
+                </a>
+            </article>
+            {% endfor %}
+            {% if project_items.size == 0 %}
+            <p class="projects-empty">아직 게시된 프로젝트가 없습니다.</p>
+            {% endif %}
         </section>
     </main>
 </body>

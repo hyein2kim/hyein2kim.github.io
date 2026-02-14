@@ -6,6 +6,9 @@ collections:
   blog:
     output: true
     permalink: /abcd/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 defaults:
   - scope:
@@ -13,3 +16,8 @@ defaults:
       type: blog
     values:
       layout: blog_layout
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project_layout
