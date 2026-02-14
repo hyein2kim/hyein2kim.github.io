@@ -600,21 +600,25 @@ blockquote {
     }
 
     .abcd-hero-row {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
         transform: none;
     }
 
     .abcd-logo-card {
         flex-basis: auto;
-        width: 100%;
-        padding: 8px 10px;
+        width: auto;
+        padding: 0;
     }
 
     .abcd-hero-note {
         font-size: 12px;
         line-height: 1.6;
-        max-width: 100%;
+        max-width: 210px;
+        text-align: left;
     }
 
     .abcd-hero-image {
@@ -622,8 +626,12 @@ blockquote {
     }
 
     .abcd-logo-container {
-        min-height: 150px;
+        min-height: 120px;
         padding-left: 12px;
+    }
+
+    .abcd-letter {
+        font-size: clamp(2rem, 8vw, 3.2rem);
     }
 
     .abcd-word {
