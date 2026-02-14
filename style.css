@@ -591,6 +591,7 @@ blockquote {
 
     .abcd-hero {
         gap: 8px;
+        margin-bottom: 18px;
     }
 
     .abcd-hero-description {
@@ -631,7 +632,7 @@ blockquote {
     }
 
     .abcd-letter {
-        font-size: clamp(2.1rem, 8.4vw, 3.35rem);
+        font-size: clamp(2.2rem, 8.8vw, 3.5rem);
     }
 
     .abcd-word {
