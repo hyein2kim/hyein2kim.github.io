@@ -1,0 +1,15 @@
+title: Hyein Kim
+description: Personal blog
+markdown: kramdown
+
+collections:
+  blog:
+    output: true
+    permalink: /abcd/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: blog_layout

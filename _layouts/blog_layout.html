@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Asta+Sans:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navigation">
+    <div class="nav-container">
+      <a href="/" class="logo">{{ site.title }}</a>
+      <ul class="nav-menu">
+        <li><a href="/">About</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/abcd.html" class="active">abcd</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <div class="bio">
+        <p class="location">{{ site.description }}</p>
+        <h2>{{ page.title }}</h2>
+        <p class="education">{{ page.date | date: "%Y-%m-%d" }}</p>
+
+        {% if page.tags and page.tags.size > 0 %}
+        <p class="contact">
+          {% for tag in page.tags %}
+          <a href="/tags/{{ tag | slugify }}/">#{{ tag }}</a>{% unless forloop.last %} · {% endunless %}
+          {% endfor %}
+        </p>
+        {% endif %}
+
+        {{ content }}
+      </div>
+    </section>
+  </main>
+</body>
+</html>
