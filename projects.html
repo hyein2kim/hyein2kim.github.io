@@ -28,6 +28,7 @@
     <main class="projects-main">
         {% assign project_items = site.projects | sort: "date" | reverse %}
         <section class="projects-grid">
+            <p class="projects-title">Projects</p>
             {% for project in project_items %}
             <article class="project-tile {% if project.cover %}has-cover{% endif %}" {% if project.cover %}style="background-image: url('{{ project.cover | relative_url }}');"{% endif %}>
                 <a href="{{ project.url | relative_url }}" class="project-tile-link" aria-label="{{ project.title }}">

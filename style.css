@@ -832,13 +832,23 @@ blockquote {
 /* Projects Page Styles */
 .projects-main {
     width: 100%;
-    padding: 120px 24px 70px;
+    padding: 120px 40px 70px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.projects-title {
+    grid-column: 1 / -1;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
 }
 
 .project-tile {
@@ -880,6 +890,12 @@ blockquote {
     grid-column: 1 / -1;
     font-family: 'Roboto Mono', monospace;
     color: #666;
+}
+
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 /* Responsive */
