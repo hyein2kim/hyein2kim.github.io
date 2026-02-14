@@ -34,7 +34,7 @@ permalink: /abcd.html
         </section>
 
         <section class="abcd-list">
-            {% assign posts = site.pages | where_exp: "p", "p.path contains 'blog/' and p.title" | sort: "date" | reverse %}
+            {% assign posts = site.pages | where_exp: "p", "p.path contains 'blog/' and p.title != nil" | sort: "date" | reverse %}
             <div class="abcd-filter" aria-label="Tag filters">
                 <button class="abcd-filter-tag is-active" data-filter="all" type="button">all</button>
                 {% assign seen_tags = "|" %}
