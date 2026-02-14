@@ -22,23 +22,24 @@
     </div>
   </nav>
 
-  <main class="container">
-    <section class="intro">
-      <div class="bio">
-        <p class="location">{{ site.description }}</p>
-        <h2>{{ page.title }}</h2>
-        <p class="education">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <main class="post-main">
+    <section class="post-page">
+      <article class="post-card">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-date">{{ page.date | date: "%Y-%m-%d" }}</p>
 
         {% if page.tags and page.tags.size > 0 %}
-        <p class="contact">
+        <div class="post-tag-list">
           {% for tag in page.tags %}
-          <a href="/tags/{{ tag | slugify }}/">#{{ tag }}</a>{% unless forloop.last %} · {% endunless %}
+          <span class="abcd-tag">#{{ tag }}</span>
           {% endfor %}
-        </p>
+        </div>
         {% endif %}
 
-        {{ content }}
-      </div>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </article>
     </section>
   </main>
 </body>
