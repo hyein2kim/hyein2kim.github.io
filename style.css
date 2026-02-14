@@ -224,27 +224,30 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navigation {
-        padding: 15px 0;  
+        padding: 12px 0;
     }
     
     .nav-container {
-        flex-direction: column;
-        gap: 15px;  
-        padding: 0;  
-        margin-left: 20px;  
-        align-items: flex-start;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0 16px 0 0;
+        margin-left: 20px;
+        align-items: center;
     }
     
     .nav-menu {
-        gap: 10px;  /* 15px → 10px */
-        flex-direction: column;
-        padding-left: 0;  /* 추가 */
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: auto;
+        padding-left: 0;
     }
     
     .container {
         margin: 0;
         margin-left: 20px;  
-        padding: 160px 20px 60px 0;  
+        padding: 120px 20px 60px 0;
         max-width: calc(100% - 40px);  
     }
     
@@ -268,7 +271,7 @@ footer {
     }
     
     .logo {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .brand-description {
@@ -277,7 +280,7 @@ footer {
     }
     
     .nav-menu a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .abcd-page {
