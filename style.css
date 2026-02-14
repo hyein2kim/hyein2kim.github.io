@@ -335,6 +335,10 @@ blockquote {
     padding: 170px 0 80px;
 }
 
+.abcd-page section {
+    margin-bottom: 0;
+}
+
 .abcd-hero {
     width: min(1120px, 92vw);
     margin: 0 auto 40px;
@@ -694,9 +698,14 @@ blockquote {
         padding-top: 180px;
     }
 
-    .abcd-hero {
-        gap: 8px;
-        margin-bottom: 18px;
+    .abcd-page .abcd-hero {
+        min-height: auto;
+        gap: 42px;
+        margin-bottom: 20px;
+    }
+
+    .abcd-list {
+        margin-top: 72px !important;
     }
 
     .abcd-hero-description {
@@ -732,7 +741,7 @@ blockquote {
     }
 
     .abcd-logo-container {
-        min-height: 120px;
+        min-height: 72px;
         padding-left: 12px;
     }
 
@@ -843,10 +852,11 @@ blockquote {
 
 .projects-title {
     grid-column: 1 / -1;
-    font-family: 'PT Serif', serif;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -0.02em;
+    font-family: 'PT Serif', serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2;
     color: #1a1a1a;
     margin: 0 0 8px 0;
 }
@@ -902,6 +912,14 @@ blockquote {
 @media (max-width: 768px) {
     .pub-section .section-title {
         font-size: 24px !important;
+    }
+
+    .projects-title {
+        font-family: 'PT Serif', serif !important;
+        font-size: 24px !important;
+        font-weight: 400 !important;
+        letter-spacing: -0.02em !important;
+        line-height: 1.2;
     }
     
     .pub-item .pub-title {
