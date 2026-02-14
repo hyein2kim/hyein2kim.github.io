@@ -337,13 +337,11 @@ blockquote {
 
 .abcd-hero {
     width: min(1120px, 92vw);
-    min-height: 58vh;
-    margin: 0 auto 48px;
+    margin: 0 auto 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 16px;
     text-align: center;
 }
 
@@ -352,13 +350,154 @@ blockquote {
     font-size: 14px;
     color: #333;
     line-height: 1.8;
-    max-width: 760px;
+    width: 100%;
+    padding: 0;
+}
+
+.abcd-hero-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    width: fit-content;
+    margin: 0 auto;
+    transform: none;
+}
+
+.abcd-logo-card {
+    flex: 0 0 auto;
+    padding: 0;
+}
+
+.abcd-hero-note {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    max-width: 420px;
+}
+
+.abcd-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: auto;
+    min-height: 160px;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.abcd-letter-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.abcd-letter {
+    display: inline-block;
+    font-family: 'Coiny', cursive;
+    font-size: clamp(2.6rem, 6.2vw, 5rem);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abcd-letter-wrap:nth-child(1) .abcd-letter {
+    color: #ffff67;
+    transform: translateY(0);
+}
+
+.abcd-letter-wrap:nth-child(2) .abcd-letter {
+    color: #c7fee6;
+    transform: translateY(-10px);
+}
+
+.abcd-letter-wrap:nth-child(3) .abcd-letter {
+    color: #ffc2ec;
+    transform: translateY(-5px);
+}
+
+.abcd-letter-wrap:nth-child(4) .abcd-letter {
+    color: #99d3f9;
+    transform: translateY(10px);
+}
+
+@keyframes bounce-up {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.abcd-letter:hover {
+    animation: bounce-up 0.6s ease-in-out;
+}
+
+.abcd-word {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    color: #111;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    white-space: nowrap;
+}
+
+.abcd-letter-wrap:hover .abcd-word {
+    opacity: 1;
+}
+
+.a-word {
+    left: 28%;
+    top: -18px;
+    transform: translate(-6px, 4px);
+}
+
+.b-word-1 {
+    left: 18%;
+    top: -22px;
+    transform: translate(-6px, 6px);
+}
+
+.b-word-2 {
+    left: 52%;
+    bottom: -18px;
+    transform: translate(5px, -4px);
+}
+
+.c-word-1 {
+    left: 54%;
+    top: -20px;
+    bottom: auto;
+    transform: translate(6px, 6px);
+}
+
+.c-word-2 {
+    left: 18%;
+    top: auto;
+    bottom: -18px;
+    transform: translate(-8px, -3px);
+}
+
+.d-word {
+    left: 56%;
+    top: -18px;
+    transform: translate(6px, 6px);
+}
+
+.abcd-letter-wrap:hover .a-word,
+.abcd-letter-wrap:hover .b-word-1,
+.abcd-letter-wrap:hover .b-word-2,
+.abcd-letter-wrap:hover .c-word-1,
+.abcd-letter-wrap:hover .c-word-2,
+.abcd-letter-wrap:hover .d-word {
+    transform: translate(0, 0);
 }
 
 .abcd-hero-image {
     width: min(980px, 88vw);
     min-height: 360px;
-    border: 1px dashed #999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,17 +590,44 @@ blockquote {
     }
 
     .abcd-hero {
-        min-height: 48vh;
-        gap: 18px;
+        gap: 12px;
     }
 
     .abcd-hero-description {
         font-size: 12px;
+        line-height: 1.6;
+        padding: 0;
+    }
+
+    .abcd-hero-row {
+        flex-direction: column;
+        gap: 12px;
+        transform: none;
+    }
+
+    .abcd-logo-card {
+        flex-basis: auto;
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    .abcd-hero-note {
+        font-size: 12px;
+        line-height: 1.6;
         max-width: 100%;
     }
 
     .abcd-hero-image {
         min-height: 220px;
+    }
+
+    .abcd-logo-container {
+        min-height: 150px;
+        padding-left: 12px;
+    }
+
+    .abcd-word {
+        font-size: 10px;
     }
 }
 
