@@ -1,6 +1,9 @@
 ---
-title: "My First Post"
-date: 2026-02-14
+title: test post
+date: 2026-04-26
 layout: abcd_layout
-tags: [obsidian, jekyll]
+tags:
+  - art
+  - book
 ---
+ㅁ
