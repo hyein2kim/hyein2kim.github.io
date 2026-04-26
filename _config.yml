@@ -1,9 +1,9 @@
 title: Hyein Kim
-description: Personal blog
+description: Personal site
 markdown: kramdown
 
 collections:
-  blog:
+  abcd:
     output: true
     permalink: /abcd/:name/
   projects:
@@ -13,9 +13,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: blog
+      type: abcd
     values:
-      layout: blog_layout
+      layout: abcd_layout
   - scope:
       path: ""
       type: projects
