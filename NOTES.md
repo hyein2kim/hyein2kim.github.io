@@ -19,8 +19,11 @@
   - `_layouts/project_layout.html` (project detail)
 
 ## Content Locations (Obsidian)
+- Open `/Users/hyeinkim/Documents/GitHub/hyein2kim.github.io` as the Obsidian vault (the parent folder of `abcd`). Both content folders are available in this vault.
 - Blog notes: `abcd/*.md`
 - Projects notes: `_projects/*.md`
+- Create or edit a Markdown note in the appropriate folder with `title`, `date`, and `tags` properties. The layout is assigned automatically by folder; an explicit `layout` property is optional.
+- To publish either kind of note, commit the changes and push to GitHub using GitHub Desktop. Wait for the GitHub Pages deployment to complete.
 
 ### Required front matter (abcd)
 ```yaml

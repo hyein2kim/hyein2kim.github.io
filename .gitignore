@@ -1,4 +1,6 @@
 _site/
+.obsidian/
+.local-assets/abcd-logo/
 .DS_Store
 abcd/.obsidian/
 abcd/.DS_Store

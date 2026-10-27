@@ -2,6 +2,11 @@ title: Hyein Kim
 description: Personal site
 markdown: kramdown
 
+exclude:
+  - .local-assets/abcd-logo
+  - vendor
+  - NOTES.md
+
 collections:
   abcd:
     output: true
@@ -11,6 +16,10 @@ collections:
     permalink: /projects/:name/
 
 defaults:
+  - scope:
+      path: "abcd"
+    values:
+      layout: abcd_layout
   - scope:
       path: ""
       type: abcd
