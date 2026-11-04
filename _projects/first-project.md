@@ -4,6 +4,7 @@ date: 2026-02-14
 tags:
   - urban
   - data
+published: true
 ---
 
 Obsidian에서 작성한 첫 프로젝트 노트입니다.
