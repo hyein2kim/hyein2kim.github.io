@@ -2,8 +2,17 @@ title: Hyein Kim
 description: Personal site
 markdown: kramdown
 
+# Show a single line break in a note as a line break, as Obsidian does.
+kramdown:
+  input: GFM
+  hard_wrap: true
+
+# marimo exports contain files starting with "_", which Jekyll skips by default.
+include:
+  - "_*.js"
+  - "_*.css"
+
 exclude:
-  - .local-assets/abcd-logo
   - vendor
   - NOTES.md
 
@@ -15,18 +24,20 @@ collections:
     output: true
     permalink: /projects/:name/
 
+# Notes stay off the site until they set `published: true`.
+# Note text is never run as Liquid, so {{ }} and {% %} display as written.
 defaults:
-  - scope:
-      path: "abcd"
-    values:
-      layout: abcd_layout
   - scope:
       path: ""
       type: abcd
     values:
       layout: abcd_layout
+      published: false
+      render_with_liquid: false
   - scope:
       path: ""
       type: projects
     values:
       layout: project_layout
+      published: false
+      render_with_liquid: false

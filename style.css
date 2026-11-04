@@ -987,3 +987,104 @@ blockquote {
         gap: 14px;
     }
 }
+
+/* Note content written in Obsidian */
+.post-content ul,
+.post-content ol,
+.project-content ul,
+.project-content ol {
+    list-style-position: outside;
+    margin: 0 0 16px 0;
+    padding-left: 24px;
+}
+
+.post-content ul,
+.project-content ul {
+    list-style-type: disc;
+}
+
+.post-content ol,
+.project-content ol {
+    list-style-type: decimal;
+}
+
+.post-content pre,
+.project-content pre {
+    margin: 0 0 16px 0;
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: rgba(26, 26, 26, 0.05);
+}
+
+.post-content table,
+.project-content table {
+    margin: 0 0 16px 0;
+    border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td,
+.project-content th,
+.project-content td {
+    padding: 6px 12px;
+    border: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+.project-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-content iframe,
+.project-content iframe {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+    border: 0;
+}
+
+.post-content mark,
+.project-content mark {
+    padding: 0 2px;
+    background-color: #fff3a3;
+    color: inherit;
+}
+
+.callout {
+    --callout-color: 74, 111, 165;
+    margin: 0 0 16px 0;
+    padding: 12px 16px;
+    border-left: 3px solid rgb(var(--callout-color));
+    border-radius: 4px;
+    background-color: rgba(var(--callout-color), 0.08);
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.callout > :last-child {
+    margin-bottom: 0;
+}
+
+.post-content .callout-title,
+.project-content .callout-title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: rgb(var(--callout-color));
+}
+
+.callout-tip,
+.callout-success {
+    --callout-color: 46, 125, 90;
+}
+
+.callout-warning,
+.callout-caution {
+    --callout-color: 176, 112, 20;
+}
+
+.callout-danger,
+.callout-error {
+    --callout-color: 184, 60, 60;
+}
